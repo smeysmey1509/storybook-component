@@ -3,16 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "build-storybook",
     "test-storybook": "test-storybook"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
     "@chromatic-com/storybook": "^1.6.1",
     "@storybook/addon-essentials": "^8.2.8",
     "@storybook/addon-interactions": "^8.2.9",
@@ -21,13 +28,23 @@
     "@storybook/addon-storysource": "^8.2.9",
     "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
     "@storybook/blocks": "^8.2.8",
+    "@storybook/cli": "^8.2.9",
     "@storybook/html": "^8.2.8",
     "@storybook/html-webpack5": "^8.2.8",
     "@storybook/jest": "^0.2.2",
     "@storybook/test": "^8.2.8",
     "@storybook/test-runner": "^0.19.1",
     "@storybook/testing-library": "^0.2.1",
-    "storybook": "^8.2.8"
+    "@storybook/web-components": "^8.2.9",
+    "@storybook/web-components-webpack5": "^8.2.9",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^7.1.2",
+    "lit": "^3.2.0",
+    "storybook": "^8.2.8",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0"
